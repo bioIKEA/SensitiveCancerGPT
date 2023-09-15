@@ -1,4 +1,4 @@
-## Author: Shaika Chowdhury
+#Author: Shaika Chowdhury
 
 import streamlit as st
 import requests
@@ -7,7 +7,7 @@ import json
 
 def call_api(input_prompt, tissue):
     headers = {
-    "Authorization": f'Bearer ' + st.secrets('OPENAI_API_KEY'),
+    "Authorization": f'Bearer ' + st.secrets['openai']['OPENAI_API_KEY'],
 }
     data = {
   "prompt": input_prompt,
@@ -30,8 +30,6 @@ def call_api(input_prompt, tissue):
         r = requests.post("https://api.openai.com/v1/engines/ada:ft-personal-2023-09-14-16-07-32/completions", headers=headers, json=data)
     
     out = json.loads(r.text)
-    #print('out', out)
-    #sys.exit()
     completion = out['choices'][0]['text']
     completion = completion.split('\n')
     completion = completion[0]
