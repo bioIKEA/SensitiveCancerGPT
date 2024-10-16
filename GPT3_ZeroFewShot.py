@@ -1,4 +1,4 @@
-####### GPT-3 ZERO SHOT 
+####### GPT-3 ZERO/FEW SHOT 
 
 import openai
 from openai import OpenAI
