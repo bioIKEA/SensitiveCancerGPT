@@ -1,0 +1,5 @@
+{"prompt": "drug: luminespib\ncell line: emc-bac-1\n", "completion": " sensitive\n"}
+{"prompt": "drug: picolinici-acid\ncell line: nci-h23\n", "completion": " resistant\n"}
+{"prompt": "drug: gsk343\ncell line: nci-h1435\n", "completion": " resistant\n"}
+{"prompt": "drug: camptothecin\ncell line: nci-h2122\n", "completion": " sensitive\n"}
+{"prompt": "drug: doramapimod\ncell line: nci-h358\n", "completion": " resistant\n"}
