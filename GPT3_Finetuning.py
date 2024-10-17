@@ -35,7 +35,6 @@ for dic in inp_list:
 
 pred_list = []
 gt_list = []
-
 for i in range(len(prompt_list)):
     sent = prompt_list[i]
     gt = ground_truth_list[i]
