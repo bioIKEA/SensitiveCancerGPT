@@ -49,6 +49,7 @@ for i in range(len(prompt_list)):
     text = [tok.strip() for tok in text]
     text = list(filter(None, text))
     if text:
+        text = text[0].lower()
         if 'sensitive' in text:
             gt_list.append(gt)
             pred_list.append('sensitive')
